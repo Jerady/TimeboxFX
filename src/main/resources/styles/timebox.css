@@ -1,0 +1,126 @@
+/*
+    Document   : timerdisplay
+    Created on : 16.10.2012, 09:44:50
+    Author     : Jens Deters
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.root {
+
+    -fx-base:  rgb(46,52,64);
+    -fx-color: rgb(46,52,64);
+    -fx-bgcolor: rgb(52,60,73);
+    -fx-background: rgb(52,60,73);
+    -fx-text-base-color: rgb(216,222,233);
+    -fx-text-fill: -fx-text-base-color;
+    -fx-text-color-alt: rgb(113,119,130);
+    -fx-light-text-color: -fx-text-base-color;
+    -icons-color:  -fx-text-base-color;
+}
+
+.glyph-icon{
+    -fx-text-fill: -icons-color;
+    -fx-fill: -icons-color;
+    -glyph-size: 36px;
+}
+
+.center-slice-arc{
+    -fx-fill: rgba(46,52,64,0.95);
+}
+
+.time-slice-arc-green{
+    -fx-fill: radial-gradient(center 50% 50%, radius 100%, #b8ee36, #80c800);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+}
+
+.time-slice-arc-overdue{
+    -fx-fill: radial-gradient(center 50% 50%, radius 100%,#ff5400, #be1d00);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+.background-slice-arc{
+    -fx-fill: radial-gradient(center 50% 50%, radius 100%,derive(-fx-color, -10%),derive(-fx-color, -30.0%));
+}
+
+.timer-background-slice-arc
+{
+    -fx-fill: linear-gradient( to bottom, derive(-fx-color, 100%) 0%, derive(-fx-color, 60.0%) 100%);
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 12, 0.0 , 0 , 0 );
+}
+
+.tick{
+    -fx-stroke: -fx-text-base-color;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 1 );
+}
+
+.counter-text-normal{
+    -fx-font: bold 40px "Monospace" ;
+    -fx-padding: 10;
+    -fx-fill: radial-gradient(center 50% 50%, radius 100%, #b8ee36, #80c800);
+    -fx-background-color: #CCFF99;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 3, 0.0 , 1 , 1 );
+}
+
+.counter-text-overdue{
+    -fx-font: bold 40px "Monospace" ;
+    -fx-padding: 10;
+    -fx-fill: radial-gradient(center 50% 50%, radius 100%,#ff5400,#be1d00);
+    -fx-background-color: #CCFF99;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 3, 0.0 , 1 , 1 );
+}
+
+.title-text{
+    -fx-font-size: 14px;
+    -fx-fill: -fx-text-color-alt;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 2, 0.0 , 0 , 1 );
+}
+
+.copyright-text{
+    -fx-font-size: 10px;
+    -fx-fill: -fx-text-color-alt;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 2, 0.0 , 0 , 1 );
+}
+.version-text{
+    -fx-font-size: 10px;
+    -fx-fill: -fx-text-color-alt;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 2, 0.0 , 0 , 1 );
+}
+
+.about-appname-text{
+    -fx-text-fill: -fx-text-base-color;
+    -fx-font: bold 40px "Monospace" ;
+    -fx-padding: 10;
+    -fx-effect: innershadow( three-pass-box , rgba(0,0,0,0.7) , 3, 0.0 , 1 , 1 );
+}
+
+.navigation-button{
+    -fx-padding: 0;
+    -fx-background-color: null;
+    -fx-background-insets: 0;
+}
+
+.navigation-button:disabled{
+    -icons-color: -fx-text-color-alt;
+}
+
+.dark-label{
+    -fx-text-fill: -fx-text-color-alt;
+}
+
+.close-button {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+#modal-dimmer{
+    -fx-background-color: rgba(46,52,64,0.7);
+}
+
+.modal-dimmer-dialog{
+    -fx-background-color: black, white, -fx-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 15, 14, 13;
+    -fx-padding: 15;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 20, 0.0 , 0 , 0 );
+}

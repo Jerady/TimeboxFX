@@ -5,6 +5,10 @@
 When I started with JavaFX in 2012 TimeboxFX was one of my first JavaFX apps.
 Recently in a meeting I wanted to use it as a gimmick and I found out that TimeboxFX needed some love... So here is the new version.
 
+![](images/TimeboxFX-main-2.0.0.png)
+![](images/TimeboxFX-about-2.0.0.png)
+
+
 ## Usage
 
 Just use your mouse to increase/decrase the wanted timer value.

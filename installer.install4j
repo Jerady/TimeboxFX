@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="6.1.5" transformSequenceNumber="5">
-  <directoryPresets config="/Users/jens/DevWork/timeboxfx/appicon" />
-  <application name="TimeboxFX" distributionSourceDir="" applicationId="1206-2598-7560-8469" mediaDir="/Users/jens/DevWork/TimeboxFX-Installer" mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="true" shortName="TimeboxFX" publisher="Jens Deters" publisherWeb="http://www.jensd.de" version="3.0.0" allPathsRelative="false" backupOnSave="false" autoSave="false" convertDotsToUnderscores="true" macSignature="????" macVolumeId="3c790b349b6844cd" javaMinVersion="1.8" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
+  <directoryPresets config="/Users/jens/DevWork/timeboxfx/images" />
+  <application name="TimeboxFX" distributionSourceDir="" applicationId="1206-2598-7560-8469" mediaDir="/Users/jens/DevWork/TimeboxFX-Installer" mediaFilePattern="${compiler:sys.shortName}_${compiler:sys.platform}_${compiler:sys.version}" compression="6" lzmaCompression="false" pack200Compression="false" excludeSignedFromPacking="true" commonExternalFiles="false" createMd5Sums="true" shrinkRuntime="true" shortName="TimeboxFX" publisher="Jens Deters" publisherWeb="http://www.jensd.de" version="2.0.0" allPathsRelative="false" backupOnSave="false" autoSave="false" convertDotsToUnderscores="true" macSignature="????" macVolumeId="3c790b349b6844cd" javaMinVersion="1.8" javaMaxVersion="" allowBetaVM="false" jdkMode="runtimeJre" jdkName="">
     <languages skipLanguageSelection="false" languageSelectionInPrincipalLanguage="false">
       <principalLanguage id="en" customLocalizationFile="" />
       <additionalLanguages />
@@ -22,7 +22,7 @@
       <mountPoint id="22" root="" location="" mode="755" />
     </mountPoints>
     <entries>
-      <fileEntry mountPoint="22" file="/Users/jens/DevWork/timeboxfx/build/libs/TimeboxFX-3.0.0.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
+      <fileEntry mountPoint="22" file="/Users/jens/DevWork/timeboxfx/build/libs/TimeboxFX-2.0.0.jar" overwriteMode="4" shared="false" fileMode="644" uninstallMode="0" overrideFileMode="false" overrideOverwriteMode="false" overrideUninstallMode="false" />
     </entries>
     <components />
   </files>
@@ -39,7 +39,7 @@
       </splashScreen>
       <java mainClass="de.jensd.fx.timebox.Main" vmParameters="" arguments="" allowVMPassthroughParameters="true" preferredVM="" bundleRuntime="true">
         <classPath>
-          <archive location="TimeboxFX-3.0.0.jar" failOnError="false" />
+          <archive location="TimeboxFX-2.0.0.jar" failOnError="false" />
         </classPath>
         <nativeLibraryDirectories />
         <vmOptions />
@@ -56,7 +56,7 @@
         <content />
       </infoPlist>
       <iconImageFiles>
-        <file path="/Users/jens/DevWork/timeboxfx/appicon/TimeboxFX.png" />
+        <file path="/Users/jens/DevWork/timeboxfx/images/TimeboxFX.png" />
       </iconImageFiles>
     </launcher>
   </launchers>
